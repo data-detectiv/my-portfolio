@@ -36,7 +36,7 @@ const Navbar = () => {
             className="flex items-center space-x-2"
         >
             <Code2 size={24} className="text-blue-500"/>{" "}
-            <span className="text-lg ml-1">data-detectiv</span>
+            <span className={`text-lg ml-1 ${isDarkMode ? "text-blue-800" : "text-gray-700"}`}>data-detectiv</span>
         </motion.div>
 
         {/* desktop navigation */}
