@@ -67,13 +67,13 @@ const SkillsSection = () => {
                 variants={itemVariants}
                 className="text-3xl md:text-5xl font-light mb-6"
             >
-                Skills & <span className="text-blue-500 font-medium">Technologies</span>
+                Code. <span className="text-blue-500 font-medium">Design.</span> Deploy.
             </motion.h2>
             <motion.p
                 variants={itemVariants}
                 className={`text-lg ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-2xl mx-auto font-light`}
             >
-                A comprehensive toolkit for building modern, scalable web applications from concept to deployment.
+                A curated set of technologies for modern web development.
             </motion.p> 
         </motion.div>
 

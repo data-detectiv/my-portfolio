@@ -278,22 +278,22 @@ const HeroSection = () => {
                             <span
                                 className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                             >
-                                Building digital
+                                Crafting 
                             </span>
                             <br />
-                            <span className='text-blue-500 font-medium'>experiences</span>
+                            <span className='text-blue-500 font-medium'>Meaningful</span>
                             <br />
                             <span 
                                 className={isDarkMode ? "text-white" : "text-gray-900"}
                             >
-                                that matter
+                                Digital Experiences
                             </span>
                         </motion.h1>
                         <motion.p
                             variants={itemVariants}
                             className={`text-xl ${isDarkMode ? "text-gray-400" : "text-gray-600"} mb-12 font-light leading-relaxed max-w-lg`}
                         >
-                              I craft beautiful, functional web applications with modern technologies and thoughtful use experiences.
+                              I design and build beautiful, functional web applications using modern tools — with a sharp eye for detail and a deep care for user experience.
                         </motion.p>
 
                         {/* CTA buttons - desktop  */}
