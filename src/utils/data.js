@@ -19,7 +19,10 @@ import {
 import { FiGithub, FiLinkedin} from 'react-icons/fi';
 
 import PROJECT_IMG_1 from "../assets/images/profile.png";
-// import { color, number } from 'framer-motion';
+import PROJECT_IMG_2 from "../assets/images/placeholder_1.jpg";
+import PROJECT_IMG_3 from "../assets/images/placeholder_2.jpg";
+import PROJECT_IMG_4 from "../assets/images/placeholder_3.jpg";
+
 
 export const SKILLS_CATEGORY = [
     {
@@ -56,15 +59,6 @@ export const STATS = [
     { number: "50", label: "Project Completed"},
     { number: "3+", label: "Years Experience"},
     { number: "20+", label: "Technologies"},
-    // { number: "20+", label: "Technologies"},
-    // { number: "20+", label: "Technologies"},
-    // { number: "20+", label: "Technologies"},
-    // { number: "20+", label: "Technologies"},
-    // { number: "20+", label: "Technologies"}
-
-
-
-
 ];
 
 export const PROJECTS = [
@@ -72,18 +66,29 @@ export const PROJECTS = [
         id: 1,
         title: "E-Commerce Platform",
         description: "A full-stack e-commerce solution with advance filtering, payment integration",
-        image: "",
+        image: PROJECT_IMG_4,
         tags: ["React", "Tailwind", "Framer motion"],
         liveUrl: "#",
         githubUrl: "#",
-        featured: false,
+        featured: true,
         category: "Full Stack"
     },
      {
         id: 2,
         title: "E-Commerce Platform",
         description: "A full-stack e-commerce solution with advance filtering, payment integration",
-        image: "",
+        image: PROJECT_IMG_4,
+        tags: ["React", "Tailwind", "Framer motion"],
+        liveUrl: "#",
+        githubUrl: "#",
+        featured: false,
+        category: "Full Stack"
+    },
+      {
+        id: 3,
+        title: "E-Commerce Platform",
+        description: "A full-stack e-commerce solution with advance filtering, payment integration",
+        image: PROJECT_IMG_4,
         tags: ["React", "Tailwind", "Framer motion"],
         liveUrl: "#",
         githubUrl: "#",
