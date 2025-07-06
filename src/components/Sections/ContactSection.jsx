@@ -235,7 +235,7 @@ const ContactSection = () => {
 
         {/* button CTA  */}
         
-        <motion.div
+        {/* <motion.div
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
@@ -259,7 +259,7 @@ const ContactSection = () => {
                     Schedule a Call
                 </motion.button>
             </motion.div>
-        </motion.div>
+        </motion.div> */}
     </div>
 
     <SuccessModel 

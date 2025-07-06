@@ -14,6 +14,7 @@ import {
     Mail,
     MapPin,
     Phone,
+    FileUser
 } from 'lucide-react';
 
 import { FiGithub, FiLinkedin} from 'react-icons/fi';
@@ -140,6 +141,13 @@ export const SOCIAL_LINKS = [
     {
         name: "LinkedIn",
         icon: FiLinkedin,
+        url: "#",
+        color: "hover:text-blue-400",
+        bgcolor: "hover:bg-blue-500/10"
+    },
+    {
+        name: "Resume",
+        icon: FileUser,
         url: "#",
         color: "hover:text-blue-400",
         bgcolor: "hover:bg-blue-500/10"

@@ -130,24 +130,24 @@ const AboutSection = () => {
                     </div>
                 </motion.div>
                 {/* digital signature */}
-                <motion.div variants={itemVariants} className="text-center py-8">
-                    <div
+                {/* <motion.div variants={itemVariants} className="text-center py-8"> */}
+                    {/* <div
                         className={`text-sm ${isDarkMode ? "text-gray-500" : "text-gray-600"} mb-4`}
                     >
                         crafted with passion by
-                    </div>
+                    </div> */}
                     {/* digitalsignature */}
-                    <div className="flex justify-center">
+                    {/* <div className="flex justify-center">
                         <img 
                             src="" 
                             alt="foster" 
                             className="w-28"
                         />
-                    </div>
-                    <div className="text-lg font-medium text-blue-500 mt-2">
+                    </div> */}
+                    {/* <div className="text-lg font-medium text-blue-500 mt-2">
                         Foster Oppong
-                    </div>
-                </motion.div>
+                    </div> */}
+                {/* </motion.div> */}
             </motion.div>
 
             {/* developer journey timeline  */}

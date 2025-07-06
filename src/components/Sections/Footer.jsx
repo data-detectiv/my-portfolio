@@ -5,6 +5,8 @@ import { Mail, Heart, ArrowUp, Code2 } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { containerVariants, itemVariants } from "../../utils/helper";
+import PROFILE_IMG_1 from '../../assets/images/profile.png';
+
 
 const Footer = () => {
   const { isDarkMode } = useTheme();
@@ -104,7 +106,17 @@ const Footer = () => {
                                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                                 className="text-blue-500"
                             >
-                                <Code2 size={28}/>
+                                <motion.div
+                                    whileHover={{ scale: 1.05 }}
+                                    className={`w-10 h-10 rounded-2xl overflow-hidden border-4 ${isDarkMode ? "border-gray-800" : "border-gray-300"} shadow-2xl`}
+                                >
+                                    <img 
+                                        src={PROFILE_IMG_1}
+                                        alt="Profile" 
+                                        className='w-full h-full object-cover'
+                                    />
+                                </motion.div>
+                                {/* <Code2 size={28}/> */}
                             </motion.div>
                             <span>Foster Oppong</span>
                         </motion.div>
@@ -185,9 +197,7 @@ const Footer = () => {
                             <span>Back to top</span>
 
                         </motion.button>
-
                     </motion.div>
-
                 </motion.div>
             </div>
         </div>

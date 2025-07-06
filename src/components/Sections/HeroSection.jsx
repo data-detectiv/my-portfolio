@@ -5,11 +5,13 @@ import {
 } from 'framer-motion';
 import {
     ArrowDown,
-    Mail
+    Mail,
+    FileUser,
 } from "lucide-react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from '../../context/ThemeContext';
-import PROFILE_IMG_1 from '../../assets/images/profile.png';
+// import PROFILE_IMG_1 from '../../assets/images/profile.png';
+import PROFILE_IMG_2 from '../../assets/images/profile-1.jpg';
 import { containerVariants, itemVariants } from '../../utils/helper';
 
 const HeroSection = () => {
@@ -108,7 +110,7 @@ const HeroSection = () => {
                                     className={`w-full h-32 rounded-2xl overflow-hidden border-4 ${isDarkMode ? "border-gray-800" : "border-gray-300"} shadow-2xl`}
                                 >
                                     <img 
-                                        src={PROFILE_IMG_1}
+                                        src={PROFILE_IMG_2}
                                         alt="Profile" 
                                         className='w-full h-full object-cover'
                                     />
@@ -195,7 +197,8 @@ const HeroSection = () => {
                             {[
                                 { icon: FiGithub, href: "#" },
                                 { icon: FiLinkedin, href: "#" },
-                                { icon: Mail, href: "#" }
+                                { icon: Mail, href: "#" },
+                                { icon: FileUser, href: "https://drive.google.com/drive/u/0/folders/1jQ-0RkCKNMR8OYe8UIh-Puw4SqcVEeQn" },
                             ].map((social, index) => (
                                 <motion.a
                                     key={index}
@@ -324,7 +327,8 @@ const HeroSection = () => {
                             {[
                                 { icon: FiGithub, href: "#" },
                                 { icon: FiLinkedin, href: "#" },
-                                { icon: Mail, href: "#" }
+                                { icon: Mail, href: "#" },
+                                { icon: FileUser, href: "#" },
                             ].map((social, index) => (
                                 <motion.a
                                     key={index}
@@ -392,7 +396,7 @@ const HeroSection = () => {
                             className={`w-80 h-96 rounded-3xl overflow-hidden border-4 ${isDarkMode ? "border-gray-800" : "border-gray-300"} shadow-2xl`}
                         >
                             <img 
-                                src={PROFILE_IMG_1}
+                                src={PROFILE_IMG_2}
                                 alt="Profile" 
                                 className='w-full h-full object-cover'
                             />

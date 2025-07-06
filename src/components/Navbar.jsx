@@ -12,6 +12,8 @@ import {
     X
 } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
+import PROFILE_IMG_1 from '../assets/images/profile.png';
+
 
 const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useTheme();
@@ -35,7 +37,17 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
         >
-            <Code2 size={24} className="text-blue-500"/>{" "}
+            <motion.div
+                whileHover={{ scale: 1.05 }}
+                className={`w-10 h-10 rounded-2xl overflow-hidden border-4 ${isDarkMode ? "border-gray-800" : "border-gray-300"} shadow-2xl`}
+            >
+                <img 
+                    src={PROFILE_IMG_1}
+                    alt="Profile" 
+                    className='w-full h-full object-cover'
+                />
+            </motion.div>
+            {/* <Code2 size={24} className="text-blue-500"/>{" "} */}
             <span className={`text-lg ml-1 ${isDarkMode ? "text-blue-800" : "text-gray-700"}`}>data-detectiv</span>
         </motion.div>
 
