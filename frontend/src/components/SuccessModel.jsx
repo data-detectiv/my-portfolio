@@ -16,7 +16,7 @@ const SuccessModel = ({ showSuccess, setShowSuccess, isDarkMode }) => {
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.8, opacity: 0, y: 20 }}
           transition={{ type: "spring", duration: 0.5 }}
-          className={`relative p-8 rounded-2xl border max-w-sm w-full text-center ${isDarkMode ? "bg-gray-800 border-gray-700" : "bg-white border-gray--200"}`}
+          className={`relative p-8 rounded-2xl border max-w-sm w-full text-center ${isDarkMode ? "bg-gray-800 border-gray-700" : "bg-white border-gray-200"}`}
           onClick={(e) => e.stopPropagation()}
         >
           <button
