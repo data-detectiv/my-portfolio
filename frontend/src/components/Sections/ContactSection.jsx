@@ -36,7 +36,7 @@ const ContactSection = () => {
     // https://my-portfolio-backend-pq7d.onrender.com
 
     try {
-      const res = await fetch("https://my-portfolio-backend-pq7d.onrender.com", {
+      const res = await fetch("https://my-portfolio-backend-pq7d.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,7 +55,7 @@ const ContactSection = () => {
     }
  
     // simulate api call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // await new Promise((resolve) => setTimeout(resolve, 1000));
     setIsSubmitting(false);
     setShowSuccess(true);
     setFormData({ name: "", email: "", message: ""});
