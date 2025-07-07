@@ -97,7 +97,7 @@ export const PROJECTS = [
         description: "Special Ed is a web-based AI assistant designed to streamline weekly student performance tracking. The platform allows educators and stakeholders to input assessment data and receive structured performance summaries, insights, and recommendations. Powered by advanced LLMs like OpenAI's GPT and Anthropic's Claude.",
         image: PROJECT_IMG_4,
         tags: ["Python", "FastAPI", "Streamlit"],
-        liveUrl: "#",
+        liveUrl: "https://specialed-v1.streamlit.app/",
         githubUrl: "https://github.com/data-detectiv/special_ed",
         featured: false,
         category: "Full Stack"
