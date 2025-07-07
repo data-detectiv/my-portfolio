@@ -55,7 +55,7 @@ const ContactSection = () => {
     }
  
     // simulate api call
-    // await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     setIsSubmitting(false);
     setShowSuccess(true);
     setFormData({ name: "", email: "", message: ""});
