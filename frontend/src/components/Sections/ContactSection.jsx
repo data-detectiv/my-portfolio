@@ -46,22 +46,26 @@ const ContactSection = () => {
 
       if (!res.ok) throw new Error("Failed to send message");
 
-      const data = await res.json();
       setStatus("Message sent!");
-      setForm({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", message: "" });
+      setShowSuccess(true);
+
+      // auto hide success modal after 3 secs 
+    setTimeout(() => setShowSuccess(false), 3000);
     } catch (err) {
       console.error(err);
       setStatus("Something went wrong. Try again.");
+    } finally {
+      setIsSubmitting(false)
     }
  
     // simulate api call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setIsSubmitting(false);
-    setShowSuccess(true);
-    setFormData({ name: "", email: "", message: ""});
+    // await new Promise((resolve) => setTimeout(resolve, 1000));
+    // setIsSubmitting(false);
+    // setShowSuccess(true);
+    // setFormData({ name: "", email: "", message: ""});
 
-    // auto hide success modal after 3 secs 
-    setTimeout(() => setShowSuccess(false), 3000);
+    
 
   };
 
