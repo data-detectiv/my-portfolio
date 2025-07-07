@@ -89,21 +89,25 @@ const AboutSection = () => {
                     variants={itemVariants}
                     className={`p-8 rounded-2xl border ${isDarkMode ? "text-gray-800/50 border-gray-700 backdrop-blur-sm" : "text-gray-50/80 border-gray-200 backdrop-blur-sm"}`}
                 >
-                    <h3 className="text-2xl font-medium mb-6">My Mission</h3>
+                    <h3 className={`text-2xl font-medium mb-6 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>Foster Oppong</h3>
                     <p
                         className={`text-lg leading-relaxed mb-6 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}
                     >
-                        i believe technology should be a bridge that connects people and solves real-world problems. my passion lies in crafting...
+                        I’m a rising junior at Wingate University studying Math and Finance. I enjoy solving real-world problems with data and building simple tech tools to help people. I have experience in data analysis, machine learning, and building AI-powered apps. I’ve worked on projects that improved fundraising, automated reports, and made information easier to understand.
+
+                        I’m also a first-generation college student who loves learning, leading, and growing. I’ve joined programs like AI4ALL and Goldman Sachs Emerging Leaders to build my skills in tech and leadership.
+
+                        My interests are in software engineering and data science. I’m excited about using data, AI, and code to make a real impact.
                     </p>
                     <p
                         className={`text-base leading-relaxed ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}
                     >
-                        when I'm not coding you'll find me exploring new frameworks, contributing to open source...
+                        when I'm not coding you'll find me exploring new frameworks, and doing the below...
                     </p>
                 </motion.div>
                 {/* what i love building  */}
                 <motion.div variants={itemVariants} className="space-y-4">
-                    <h3 className="text-xl font-medium mb-6">what i love building</h3>
+                    <h3 className="text-xl font-medium mb-6">what i love doing</h3>
                     <div className="grid gap-4">
                         {PASSIONS.map((passion, index) => (
                             <motion.div
@@ -158,7 +162,7 @@ const AboutSection = () => {
                 variants={timelineVariants}
                 className="relative"
             >
-                <h3 className="text-2xl font-medium mb-8 text-center lg:text-left">my developer journey</h3>
+                <h3 className="text-2xl font-medium mb-8 text-center lg:text-left"> My journey so far </h3>
 
                 {/* timeline line  */}
                 <div
@@ -209,7 +213,7 @@ const AboutSection = () => {
         </div>
 
         {/* call to action  */}
-        <motion.div
+        {/* <motion.div
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
@@ -232,7 +236,7 @@ const AboutSection = () => {
                     let's work together
                 </motion.button>
             </motion.div>
-        </motion.div>
+        </motion.div> */}
     </div>
   </section>
 }

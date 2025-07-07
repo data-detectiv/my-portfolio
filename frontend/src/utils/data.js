@@ -2,6 +2,9 @@ import {
     Code2,
     GraduationCap,
     Briefcase,
+    Handshake,
+    Dumbbell,
+    ChefHat,
     Award,
     Rocket,
     Heart,
@@ -19,10 +22,10 @@ import {
 
 import { FiGithub, FiLinkedin} from 'react-icons/fi';
 
-import PROJECT_IMG_1 from "../assets/images/profile.png";
-import PROJECT_IMG_2 from "../assets/images/placeholder_1.jpg";
-import PROJECT_IMG_3 from "../assets/images/placeholder_2.jpg";
-import PROJECT_IMG_4 from "../assets/images/placeholder_3.jpg";
+import PROJECT_IMG_1 from "../assets/images/task-manager.jpeg";
+import PROJECT_IMG_2 from "../assets/images/notes.gif";
+import PROJECT_IMG_3 from "../assets/images/mutual-fund.jpeg";
+import PROJECT_IMG_4 from "../assets/images/special.jpeg";
 
 
 export const SKILLS_CATEGORY = [
@@ -33,7 +36,7 @@ export const SKILLS_CATEGORY = [
         skills: [
             { name: "React", level: 95, color: "bg-blue-500"},
             { name: "Tailwind CSS", level: 92, color: "bg-cyan-500"},
-            { name: "Framer Motion", level: 92, color: "bg-cyan-500"},
+            { name: "Framer Motion", level: 92, color: "bg-rose-500"},
 
         ],
     },
@@ -42,21 +45,21 @@ export const SKILLS_CATEGORY = [
         icon: Server,
         description: "Building robust server-side solutions",
         skills: [
-            { name: "Python", level: 95, color: "bg-cyan-500"},
-            { name: "Java", level: 95, color: "bg-cyan-500"},
+            { name: "Python", level: 95, color: "bg-emerald-500"},
+            { name: "Java", level: 95, color: "bg-amber-500"},
             { name: "Node.js", level: 92, color: "bg-green-500"},
-            { name: "Express.js", level: 90, color: "bg-gray-500"},
+            { name: "Express.js", level: 90, color: "bg-teal-500"},
 
         ],
     },
     {
         title: "Databases",
         icon: Database,
-        description: "Building robust server-side solutions",
+        description: "Designing efficient, scalable data storage systems",
         skills: [
-            { name: "MongoDB", level: 80, color: "bg-cyan-500"},
-            { name: "MySQL", level: 85, color: "bg-green-500"},
-            { name: "Postgres", level: 75, color: "bg-gray-500"},
+            { name: "MongoDB", level: 80, color: "bg-orange-500"},
+            { name: "MySQL", level: 85, color: "bg-indigo-500"},
+            { name: "Postgres", level: 75, color: "bg-violet-500"},
 
         ],
     }
@@ -91,44 +94,44 @@ export const PROJECTS = [
     {
         id: 1,
         title: "Special_ed",
-        description: "A full-stack e-commerce solution with advance filtering, payment integration",
+        description: "Special Ed is a web-based AI assistant designed to streamline weekly student performance tracking. The platform allows educators and stakeholders to input assessment data and receive structured performance summaries, insights, and recommendations. Powered by advanced LLMs like OpenAI's GPT and Anthropic's Claude.",
         image: PROJECT_IMG_4,
         tags: ["Python", "FastAPI", "Streamlit"],
         liveUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/data-detectiv/special_ed",
         featured: false,
         category: "Full Stack"
     },
      {
         id: 2,
         title: "JotSpace",
-        description: "A full-stack e-commerce solution with advance filtering, payment integration",
-        image: PROJECT_IMG_4,
+        description: "JotSpace is a full-stack note-taking web application built with the MERN stack (MongoDB, Express.js, React, and Node.js). It allows users to create, manage, and organize their notes with powerful features such as authentication, role-based access control, note pinning, and real-time editing.",
+        image: PROJECT_IMG_2,
         tags: ["React", "Vite", "Tailwind", "Node.js", "Express", "MongoDB"],
-        liveUrl: "#",
-        githubUrl: "#",
+        liveUrl: "https://jot-space-frontend.onrender.com/",
+        githubUrl: "https://github.com/data-detectiv/jot-space",
         featured: false,
         category: "Full Stack"
     },
       {
         id: 3,
         title: "Mutual Fund Predictor",
-        description: "A full-stack e-commerce solution with advance filtering, payment integration",
-        image: PROJECT_IMG_4,
+        description: "The Mutual Fund app is a web-based application that helps users estimate the future value of investments in various mutual funds based on initial investment, time horizon, and market dynamics. It includes both a backend and a frontend for seamless interaction.",
+        image: PROJECT_IMG_3,
         tags: ["Java", "Spring Boot", "Angular"],
         liveUrl: "#",
-        githubUrl: "#",
-        featured: false,
+        githubUrl: "https://github.com/data-detectiv/mutual-fund-app",
+        featured: true,
         category: "Full Stack"
     },
       {
         id: 4,
         title: "Auth-Enabled Task Manager API",
-        description: "A full-stack e-commerce solution with advance filtering, payment integration",
-        image: PROJECT_IMG_4,
+        description: "A secure, RESTful API built with Node.js, Express, and MongoDB that allows authenticated users to manage personal tasks. Features include user registration, login, token-based authentication, and full task CRUD operations.",
+        image: PROJECT_IMG_1,
         tags: ["Node.js", "Express", "MongoDB"],
         liveUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://github.com/data-detectiv/auth-task-manager",
         featured: false,
         category: "Backend"
     },
@@ -155,22 +158,32 @@ export const JOURNEY_STEPS = [
         year: "2024 - Present",
         title: "Data Analyst",
         company: "Wingate University - Advancement Services",
-        description: "Began learning",
+        description: "Spearheaded a predictive model using regression analysis on a dataset of 10,000+ alumni records, identifying 200 potential major gift donors with 85% accuracy, which significantly improved outreach effectiveness - Increased event pledge revenue by 20% through the application of advanced predictive modeling techniques - Conducted in-depth analysis of over 10,000 alumni records to uncover key giving patterns and optimize fundraising strategies, leading to more targeted campaigns",
         icon: Briefcase,
-        color: "bg-yellow-500"
+        color: "bg-green-500"
     },
 ];
 
 export const PASSIONS = [
     {
-        icon: Heart,
-        title: "User Experience",
-        description: "Crafting intuitive interfaces that users love"
+        icon: Handshake,
+        title: "Community Impact",
+        description: "Giving back through meaningful service and connection"
     },
     {
-        icon: Coffee,
-        title: "User Experience",
-        description: "Crafting intuitive interfaces that users love"
+        icon: BookOpen,
+        title: "Lifelong Learning",
+        description: "Exploring ideas and stories to expand the mind"
+    },
+    {
+        icon: Dumbbell,
+        title: "Physical Wellness",
+        description: "Building strength and discipline through consistent training"
+    },
+    {
+        icon: ChefHat,
+        title: "Creative Cooking",
+        description: "Transforming fresh ingredients into delicious experiences"
     },
 ];
 
@@ -178,21 +191,21 @@ export const SOCIAL_LINKS = [
     {
         name: "GitHub",
         icon: FiGithub,
-        url: "#",
+        url: "https://github.com/data-detectiv",
         color: "hover:text-blue-400",
         bgcolor: "hover:bg-blue-500/10"
     },
     {
         name: "LinkedIn",
         icon: FiLinkedin,
-        url: "#",
+        url: "https://www.linkedin.com/in/foster-oppong/",
         color: "hover:text-blue-400",
         bgcolor: "hover:bg-blue-500/10"
     },
     {
         name: "Resume",
         icon: FileUser,
-        url: "#",
+        url: "https://drive.google.com/file/d/1MHtLnUqtNyLxvSZLq72Vq8Bcyg2ihX-S/view?usp=sharing",
         color: "hover:text-blue-400",
         bgcolor: "hover:bg-blue-500/10"
     },
@@ -207,6 +220,6 @@ export const CONTACT_INFO = [
     { 
         icon: Mail,
         label: "Email",
-        value: "test@gmail.com"
+        value: "oppongfoster89@gmail.com"
     },
 ];

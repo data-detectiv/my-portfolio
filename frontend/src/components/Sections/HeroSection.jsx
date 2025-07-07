@@ -132,7 +132,7 @@ const HeroSection = () => {
                         {/* content - mobile  */}
                         <motion.div
                             variants={textVariants}
-                            className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-500" : "text-gray-500"} mb-4`}
+                            className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-500" : "text-gray-500"} mt-20 mb-4`}
                         >
                             Software Engineer
                         </motion.div>
@@ -195,13 +195,14 @@ const HeroSection = () => {
                             className='flex justify-center space-x-6 mb-8'
                         >
                             {[
-                                { icon: FiGithub, href: "#" },
-                                { icon: FiLinkedin, href: "#" },
-                                { icon: Mail, href: "#" },
-                                { icon: FileUser, href: "https://drive.google.com/drive/u/0/folders/1jQ-0RkCKNMR8OYe8UIh-Puw4SqcVEeQn" },
+                                { icon: FiGithub, href: "https://github.com/data-detectiv" },
+                                { icon: FiLinkedin, href: "https://www.linkedin.com/in/foster-oppong/" },
+                                { icon: Mail, href: "mailto:oppongfoster89@gmail.com" },
+                                { icon: FileUser, href: "https://drive.google.com/file/d/1MHtLnUqtNyLxvSZLq72Vq8Bcyg2ihX-S/view?usp=sharing" },
                             ].map((social, index) => (
                                 <motion.a
                                     key={index}
+                                    target='_blank'
                                     href={social.href}
                                     whileHover={{ y: -3, scale: 1.1 }}
                                     className={`p-3 rounded-full transition-colors ${isDarkMode ? "text-gray-400 hover:text-white hover:bg-gray-800" : "text-gray-900 hover:bg-gray-200"}`}
@@ -266,7 +267,7 @@ const HeroSection = () => {
                     >
                         <motion.div
                             variants={textVariants}
-                            className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-500" : "text-gray-600"} mb-6`}
+                            className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-500" : "text-gray-600"} mt-3 mb-6`}
                         >
                             Software Engineer
                         </motion.div>
@@ -325,13 +326,14 @@ const HeroSection = () => {
                             className='flex space-x-6 mb-12'
                         >
                             {[
-                                { icon: FiGithub, href: "#" },
-                                { icon: FiLinkedin, href: "#" },
-                                { icon: Mail, href: "#" },
-                                { icon: FileUser, href: "#" },
+                                { icon: FiGithub, href: "https://github.com/data-detectiv" },
+                                { icon: FiLinkedin, href: "https://www.linkedin.com/in/foster-oppong/" },
+                                { icon: Mail, href: "mailto:oppongfoster89@gmail.com" },
+                                { icon: FileUser, href: "https://drive.google.com/file/d/1MHtLnUqtNyLxvSZLq72Vq8Bcyg2ihX-S/view?usp=sharing" },
                             ].map((social, index) => (
                                 <motion.a
                                     key={index}
+                                    target='_blank'
                                     href={social.href}
                                     whileHover={{ y: -3, scale: 1.1 }}
                                     className={`p-3 rounded-full transition-colors ${isDarkMode ? "text-gray-400 hover:text-white hover:bg-gray-800" : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"}`}

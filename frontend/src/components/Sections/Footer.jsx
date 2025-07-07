@@ -26,7 +26,7 @@ const Footer = () => {
     {
         name: "LinkedIn",
         icon: FiLinkedin,
-        url: "https://linkedin.com/foster-oppong",
+        url: "https://www.linkedin.com/in/foster-oppong/",
         color: "hover:text-blue-400"
     },
     {
