@@ -15,7 +15,7 @@ app.post("/api/contact", async (req, res) => {
     service: "gmail",
     auth: {
       user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS, // NOT your Gmail password
+      pass: process.env.GMAIL_PASS, 
     },
   });
 
@@ -40,4 +40,4 @@ app.post("/api/contact", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT);
