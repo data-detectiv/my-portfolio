@@ -33,7 +33,6 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // https://my-portfolio-backend-pq7d.onrender.com
 
     try {
       const res = await fetch("https://my-portfolio-backend-pq7d.onrender.com/api/contact", {
@@ -47,24 +46,20 @@ const ContactSection = () => {
       if (!res.ok) throw new Error("Failed to send message");
 
     //   const data = await res.json();
-      setStatus("Message sent!");
+    //   setStatus("Message sent!");
+    //   setForm({ name: "", email: "", message: "" });
     } catch (err) {
       console.error(err);
       setStatus("Something went wrong. Try again.");
     } finally {
-    setShowSuccess(true);
-    setIsSubmitting(false);
-    setTimeout(() => setShowSuccess(false), 3000);
-    setFormData({ name: "", email: "", message: "" });
+        setIsSubmitting(false);
+        setShowSuccess(true);
+        setFormData({ name: "", email: "", message: ""});
 
+        // auto hide success modal after 3 secs 
+        setTimeout(() => setShowSuccess(false), 3000);
 
     }
- 
-    // simulate api call
-    // await new Promise((resolve) => setTimeout(resolve, 1000));
-    // setFormData({ name: "", email: "", message: ""});
-
-    // auto hide success modal after 3 secs 
 
   };
 

@@ -193,6 +193,23 @@ const SkillsSection = () => {
             ))}
 
         </motion.div>
+        {/* github activity  */}
+        <motion.div
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={containerVariants}
+            className="mt-16 flex flex-col items-center justify-center text-center px-4"
+        >
+            <motion.div variants={itemVariants} className="mb-8">
+                <h3  className={`text-xl font-medium mb-4 ${isDarkMode ? "text-gray-200" : "text-gray-900"}`}>GitHub Activity</h3>
+            </motion.div>
+            <img 
+                className="scale-100 md:scale-110 rounded-lg shadow-lg"
+                src="https://ghchart.rshah.org/data-detectiv" 
+                alt="Foster's GitHub contributions" 
+
+            />
+        </motion.div>
     </div>
   </section>
 }

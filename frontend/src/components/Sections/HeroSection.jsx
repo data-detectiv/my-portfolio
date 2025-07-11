@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from '../../context/ThemeContext';
-// import PROFILE_IMG_1 from '../../assets/images/profile.png';
 import PROFILE_IMG_2 from '../../assets/images/profile-1.jpg';
 import { containerVariants, itemVariants } from '../../utils/helper';
 
@@ -144,18 +143,18 @@ const HeroSection = () => {
                             <span
                                 className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                             >
-                                Building digital
+                                Crafting 
                             </span>
                             <span
                                 className='text-blue-500 font-medium ml-2'
                             >
-                                experiences
+                                Meaningful
                             </span>
                             <br />
                             <span
                                 className={isDarkMode ? "text-white" : "text-gray-900"}
                             >
-                                that matter
+                                Digital Experiences
                             </span>
                         </motion.h1>
 
@@ -163,7 +162,7 @@ const HeroSection = () => {
                             variants={itemVariants}
                             className={`text-base md:text-lg ${isDarkMode ? "text-gray-400" : "text-gray-600"} mb-8 max-w-xl mx-auto font-light leading-relaxed`}
                         >
-                            I craft beautiful, functional web applications with modern technologies and thoughtful use experiences.
+                            I design and build beautiful, functional web applications using modern tools — with a sharp eye for detail and a deep care for user experience.
                         </motion.p>
 
                         {/* CTA buttons - mobile  */}
@@ -355,7 +354,7 @@ const HeroSection = () => {
                         {/* tech stack - desktop  */}
                         <motion.div
                             variants={itemVariants}
-                            className='flex items-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-20'
+                            className='flex items-center space-x-4 text-xs uppercase tracking-widest absolute -top-16 -left-20'
                         >
                             <span
                                 className={isDarkMode ? "text-gray-600" : "text-gray-500"}
