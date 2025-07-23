@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from '../../context/ThemeContext';
-import PROFILE_IMG_2 from '../../assets/images/profile-1.jpg';
+import PROFILE_IMG_2 from '../../assets/images/profile_new.png';
 import { containerVariants, itemVariants } from '../../utils/helper';
 
 const HeroSection = () => {
