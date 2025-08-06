@@ -133,7 +133,7 @@ const HeroSection = () => {
                             variants={textVariants}
                             className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-500" : "text-gray-500"} mt-20 mb-4`}
                         >
-                            Software Engineer
+                            Software Engineer | Data Scientist
                         </motion.div>
 
                         <motion.h1
